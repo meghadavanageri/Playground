@@ -1,0 +1,22 @@
+body { 
+    background: rgb(212, 208, 208);
+}
+.form_bg {
+    background: rgb(255, 255, 255);
+    border-radius:10px;
+    border:1px solid rgb(160, 156, 156);
+    padding-top: 70px;
+    padding-bottom: 170px;
+    padding-left: 400px;
+    padding-right: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+}
+.align-center {
+    text-align:center;
+}
+.psw{
+    padding-inline-start: 170px;
+}
