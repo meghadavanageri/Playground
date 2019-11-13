@@ -1,0 +1,17 @@
+body { 
+    background:rgb(250, 247, 247);
+}
+.form_bg {
+    background: rgb(255, 255, 255);   
+    border:10px solid rgb(219, 212, 212);
+    color:grey;
+    margin-top: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+    
+   
+}
+.align-center {
+    text-align:center;
+}
