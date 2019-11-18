@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Login Request</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="styleforlogin.css">
+    <title>Login Request</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styleforlogin.css">
 </head>
+
 <body>
-<div class="container">
-  <div class="row">
+    <div class="container">
         <div class="row">
+            <div class="row">
                 <div class="col-sm-12"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 form_bg">
-                <form>
-                    <h3 class="text-center">LOGIN</h3>
-                        <br/>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form_bg">
+                    <form>
+                        <h3 class="text-center">LOGIN</h3>
+                        <br />
                         <div class="form-group">
                             <h6>Email or User Name</h6>
-                                <input type="email" class="form-control" id="userid">
-                                <p><font size="2" color="red">This Field is required</font></p>
+                            <input type="email" class="form-control" id="userid">
+                            <p>
+                                <font size="2" color="red">This Field is required</font>
+                            </p>
                         </div>
                         <div class="form-group">
                             <h6>Password</h6>
-                            <input type="password" class="form-control" id="pwd"> 
-                            <p><font size="2" color="red">This Field is required</font></p>                  
+                            <input type="password" class="form-control" id="pwd">
+                            <p>
+                                <div style="font-size: small;" color="red">This Field is required</div>
+                            </p>
                         </div>
-                        <br/>
+                        <br />
                         <div class="form-group">
                             <label>
                                 <input type="checkbox" checked="checked" name="remember"> Remember me
@@ -40,12 +46,13 @@
                         <div class="align-center">
                             <button type="submit" class="btn btn-primary" id="login">LOGIN</button>
                         </div>
-                </form>
-                    </div>                    
-                  </div>
-                <div class="row">
-                        <div class="col-sm-12"></div>                      
+                    </form>
                 </div>
-  </div>
-</div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12"></div>
+            </div>
+        </div>
+    </div>
 </body>
+</html>
