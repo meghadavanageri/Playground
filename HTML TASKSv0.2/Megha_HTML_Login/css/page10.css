@@ -1,0 +1,36 @@
+
+button{
+    width:75px;
+height:25px;
+border:0;
+background: deepskyblue;
+color: #ffffff;
+border-radius: 50px;
+}
+table{
+background: #fff;
+color: #525865;
+font-family: inherit;
+outline: none;
+}
+
+table {
+max-width: 100%;
+width: 35%;
+height: 35%;
+margin-left: auto;
+margin-right: auto;
+border-radius: 10px;
+margin-top: 10%;
+}
+body
+{
+background:grey;
+color: black;
+line-height: 2;
+font-family: Calibri;
+padding: 1em;
+width: 1300px;
+height: 600px;
+margin:1.5em;
+}   
