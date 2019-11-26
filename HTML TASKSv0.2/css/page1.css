@@ -1,0 +1,47 @@
+.container{
+    top: 0px;
+left: 0px;
+width: 1024px;
+height: 768px;
+background: #F6F8F9 0% 0% no-repeat padding-box;
+opacity: 1;
+
+top: 32px;
+left: 25px;
+width: 974px;
+height: 704px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 0px 10px #00000029;
+opacity: 1;
+}
+.login{
+    top: 30%;
+left: 318px;
+width: 52px;
+height: 19px;
+text-align: left;
+font: Bold 16px/19px Roboto;
+letter-spacing: 1.6px;
+color: #595959;
+opacity: 1;
+
+}
+.box{
+top: -30%;
+margin-left: 25%;
+width: 60%;
+height: 30.5px;
+border: 1px solid #D3D3D3;
+opacity: 1;
+
+}
+button{
+    top: 543px;
+    left: 318px;
+    width: 133px;
+    height: 42px;
+    background: #32BDD2 0% 0% no-repeat padding-box;
+    box-shadow: 1px 1px 5px #00000040;
+    border-radius: 21px;
+    opacity: 1;
+}
