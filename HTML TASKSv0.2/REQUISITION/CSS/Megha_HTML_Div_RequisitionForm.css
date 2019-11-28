@@ -1,0 +1,134 @@
+.avatar {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+}
+body {
+    font-family: Arial
+  }
+  * {
+    box-sizing: border-box;
+  }
+  /* The browser window */
+  .container {
+    border: 15px solid #f1f1f1;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    width: 80%;
+    position:absolute;
+    top:10%;
+    left: 6%;
+    padding-bottom: 20px;
+    
+  }
+  .container1 {
+    
+    padding-top: 20px;
+    padding-left: 10px;
+    width: 10%;
+  }
+  .container2 {
+    
+    padding-top: 20px;
+    padding-left: 120px;  
+  }
+ 
+  .top {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+  /* Container for columns and the top "toolbar" */
+  .row {
+    padding: 10px;
+    background: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  } 
+  /* Create three unequal columns that floats next to each other */
+  .column {
+    float: left;
+  }
+  .left {
+    width: 15%;
+  }
+  .right {
+    width: 10%;
+  }
+  .middle {
+    width: 75%;
+  }
+  .same{
+      width: 33.33%;
+  }
+  .same1{
+    width: 5%;
+}
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Three bars (hamburger menu) */
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #aaa;
+    margin: 6px 0;
+    display: block;
+  }
+  .notification {
+    background-color: white;
+    color: grey;
+    position: relative;
+    display: inline-block;
+    border-radius: 50px; 
+  }
+  .notification:hover {
+    background:white;
+  }
+  .notification .badge {
+    position: absolute;
+    background-color: red;
+  }
+  /* Style the input field */
+  input[type=text] {
+    width: 80%;
+    border-radius: 15px;
+    border-style:groove;
+    background-color: white;
+    margin-top: -8px;
+    height: 30px;
+    padding: 5px;
+  }
+  
+  .button{
+    border-radius: 15px;
+    height: 30px;
+    margin-top: -6px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 40px;
+    background-color:#32BDD2;
+    color:grey;
+    color: #ffffff;
+
+  }
+  /* Page content */
+  .content {
+    padding: 10px;
+  }
+  .dot {
+    margin-top: 4px;
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+  }
+ 
+.vertical{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+   
+}
