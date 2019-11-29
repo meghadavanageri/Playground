@@ -115,15 +115,12 @@ background-color: red;
 /* Style the input field */
 input[type=text] {
 width: 80%;
-border-radius: 15px;
+border-radius: 5px;
 border-style:groove;
-background-color: white;
+background-color:#E0E0E0;
 margin-top: -8px;
 height: 30px;
 padding: 5px;
-}
-.input1{
-    background-color: red;
 }
 button{
 border-radius: 15px;
@@ -193,4 +190,6 @@ margin: 5%;
 padding-left: 40%;
 padding-top: 3%;
 padding-bottom: 2%;
+
+
 }
