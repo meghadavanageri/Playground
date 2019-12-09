@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 1</title>
+</head>
+<style>
+    .button1 {
+        background-color: #32BDD2;
+        border: solid;
+        border-color: #32BDD2;
+        border-radius: 15px;
+        color: #F0F0F0;
+        height: 35px;
+        width: 100px;
+    }
+
+    .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }
+
+    .inputspace {
+        width: 100%;
+        border: 1px solid #D3D3D3;
+        border-radius: 3px;
+        height: 25px;
+
+    }
+</style>
+
+<body>
+    <table style="width:100%">
+        <tr>
+            <td>
+
+                <table style="width:100%">
+                    <tr>
+                        <td style="background: #FFFFFF 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 0px 40px 0px #00000029;">
+                            <div style="margin-top: 10%;margin-bottom: 13%;margin-left: 30%;margin-right: 30%;">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            <span class="textfont"
+                                                style="font-size:x-large;border-bottom: solid #595959 4px;position: relative;left: 10px;">LOGIN</span>
+
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td style="padding-top:5%;">
+                                                        <table style="width: 100%;">
+                                                            <tr>
+                                                                <td> <span
+                                                                        class="textfont">Email or Username</span></td>
+                                                            </tr>
+                                                        </table>
+
+                                                        <table style="width:100%">
+                                                            <tr>
+                                                                <td>
+                                                                    </span><input class="inputspace" type="text"
+                                                                        name="Email"></span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td style="padding-top: 3%;">
+                                                        <table style="width: 100%;">
+                                                            <tr>
+                                                                <td>
+                                                                    <span class="textfont">Password</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+
+                                                        <table style="width:100%">
+                                                            <tr>
+                                                                <td>
+                                                                    </span><input class="inputspace" type="text"
+                                                                        name="Password" placeholder="******"></span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td class="textfont">
+                                                            <input type="checkbox">
+                                                        <span>Remember me</span>
+                                                    </td>
+                                                    <td class="textfont">
+                                                        <div style="float: right;">
+                                                            <a href="#" style="color: #595959;">Forgot password</a>
+                                                        </div>
+                                                       
+                                                    </td>
+                                            </table>
+                                            <table style="width:100%">
+                                                <tr>
+                                                    <td style="padding-top: 5%;">
+                                                        <div><button class="button1" name="Login">LOGIN</button></div>
+                                                    </td>
+                                            </table>
+                                </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+
+</body>
+
+</html>
