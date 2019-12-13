@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-flow: wrap;
+            justify-content: space-around;
+            padding: 2%;
+        }
+
+        .textfont {
+            text-align: left;
+            font: Bold 14px/16px Calibri;
+            letter-spacing: 0.9px;
+            color: #505050;
+            opacity: 1;
+        }
+
+        .button1 {
+            background-color: orangered;
+            border: solid;
+            border-color: orangered;
+            border-radius: 5px;
+            color: #F0F0F0;
+            height: 35px;
+            width: 100px;
+        }
+
+        .calendar {
+            margin: 0;
+            border: solid red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+                <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 0px 4px #00000029;
+                    opacity: 1;">
+                    <div style="width:100%;">
+                        <div>
+                            <div style="width: 80%;float: left;">
+                                <img src="../../IMAGES/request-icons-02.png" width="30" height="30">
+                            </div>
+                            <div style="width: 5%;float: left;">
+                                <img class="imagealign" src="../IMAGES/profilepic.jpg" width="30" height="30">
+                            </div>
+                            <div class="textfont" style="width: 10%;text-align: center;font-size:medium;float: left;">
+                                John Doe
+                            </div>
+                            <div style="width:5%;float: left;">
+                                <img class="imagealign" src="../IMAGES/request-icons-05.png" width="20" height="20">
+                            </div>
+                            <div style="clear: both;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <div style="background-color:#00000029;">
+                <div>
+                    <div>
+                        <div style="background-color:#FFFFFF;margin: 5px;">
+                            <div>
+                                <div class="flex-container">
+                                    <div>
+                                        <div>Clear All</div>
+                                        <div>Status</div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>open</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>Closed</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>Draft</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div>Sort</div>
+                                            <div>Ascending</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>Submitted</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>Subject</div>
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div><input type="radio"></div>
+                                            <div>Status</div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div>Submitted Date</div>
+                                        <div style="display:flex">
+                                            <div style="display:flex;border:solid orchid;">
+                                                <main>
+                                                    <section>
+                                                        <span class="calendar">Sun</span class="calendar">
+                                                        <span class="calendar">Mon</span>
+                                                        <span class="calendar">Tue</span>
+                                                        <span class="calendar">Wed</span>
+                                                        <span class="calendar">Thu</span>
+                                                        <span class="calendar">Fri</span>
+                                                        <span class="calendar">Sat</span>
+                                                    </section>
+                                                    <section>
+                                                        <span class="calendar">1</span class="calendar">
+                                                        <span class="calendar">2</span>
+                                                        <span class="calendar">3</span>
+                                                        <span class="calendar">4</span>
+                                                        <span class="calendar">5</span>
+                                                        <span class="calendar">6</span>
+                                                        <span class="calendar">7</span>
+                                                    </section>
+                                                    <section>
+                                                        <span class="calendar">8</span class="calendar">
+                                                        <span class="calendar">9</span>
+                                                        <span class="calendar">10</span>
+                                                        <span class="calendar">11</span>
+                                                        <span class="calendar">12</span>
+                                                        <span class="calendar">13</span>
+                                                        <span class="calendar">14</span>
+                                                    </section>
+                                                    <section>
+                                                        <span class="calendar">15</span class="calendar">
+                                                        <span class="calendar">16</span>
+                                                        <span class="calendar">17</span>
+                                                        <span class="calendar">18</span>
+                                                        <span class="calendar">19</span>
+                                                        <span class="calendar">20</span>
+                                                        <span class="calendar">21</span>
+                                                    </section>
+                                                    <section>
+                                                        <span class="calendar">22</span class="calendar">
+                                                        <span class="calendar">23</span>
+                                                        <span class="calendar">24</span>
+                                                        <span class="calendar">25</span>
+                                                        <span class="calendar">26</span>
+                                                        <span class="calendar">27</span>
+                                                        <span class="calendar">28</span>
+                                                    </section>
+                                                    <section>
+                                                        <span class="calendar">29</span class="calendar">
+                                                        <span class="calendar">30</span>
+                                                        <span class="calendar">31</span>
+                                                        <span class="calendar"></span>
+                                                        <span class="calendar"></span>
+                                                        <span class="calendar"></span>
+                                                        <span class="calendar"></span>
+                                                    </section>
+
+                                                </main>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
