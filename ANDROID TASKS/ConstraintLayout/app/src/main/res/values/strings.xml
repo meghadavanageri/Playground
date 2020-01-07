@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">ConstraintLayout</string>
+    <string name="message1">Lorem ipsum doler sit amet.</string>
+    <string name="message2">None Selected</string>
+    <string name="message3">No Results Found</string>
+    <string name="message4">We can’t find any item matching </string>
+    <string name="message5">your search</string>
 </resources>
