@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecyclerViewImage</string>
+    <string name="desc">Lorem ipsum doler sit amet.</string>
+    <string name="message2">None Selected</string>
+</resources>
