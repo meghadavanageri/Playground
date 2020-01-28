@@ -4,29 +4,226 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <androidx.drawerlayout.widget.DrawerLayout android:layout_height="50dp"
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
             android:layout_width="match_parent"
-            android:background="@color/grey">
-            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_height="wrap_content"
-                android:layout_width="match_parent">
-                <!-- Your content goes here -->
-                <ImageView
-                    android:layout_width="50dp"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/poshicons15"/>
-            </androidx.coordinatorlayout.widget.CoordinatorLayout>
-        </androidx.drawerlayout.widget.DrawerLayout>
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/grey"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="@color/white">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/poshicons15"/>
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:text="REQUISITION"
             android:padding="10dp"/>
-
     </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="30dp"
+    android:gravity="left"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="1"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="2"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="3"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="4"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="5"/>
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/border2"/>
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/buttonstyle2"
+        android:textColor="@color/white"
+        android:padding="3dp"
+        android:textAlignment="center"
+        android:text="6"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borderline"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="13dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="NOTE"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/message1"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxCornerRadiusTopStart="5dp"
+            app:boxCornerRadiusTopEnd="5dp"
+            app:boxCornerRadiusBottomStart="5dp"
+            app:boxCornerRadiusBottomEnd="5dp"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/grey">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="13dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:text="REQUEST TYPE"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/message1"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp">
+        <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"
+            android:text="SELF"/>
+        <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"
+            android:text="TEAM/DEPARTMENT/BRANCH"/>
+        <RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:useMaterialThemeColors="false"
+            android:text="SOMEONE ELSE"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:text="SAVE DRAFT" />
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue"
+           android:layout_marginLeft="120dp"
+            app:iconTint="@color/white"
+            app:cornerRadius="20dp"
+            android:text="Next"
+            app:icon="@drawable/ic_arrow_forward_black_24dp"/>
+    </LinearLayout>
 </LinearLayout>
