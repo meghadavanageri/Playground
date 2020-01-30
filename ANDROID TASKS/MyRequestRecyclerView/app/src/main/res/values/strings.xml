@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MyRequestRecyclerView</string>
+    <string name="desc">Lorem ipsum doler sit amet.</string>
+    <string name="message2">None Selected</string>
+    <string name="date">PUR - 2019 - 056 </string>
+    <string name="date1">06 Jul 2019</string>
+</resources>
