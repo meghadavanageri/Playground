@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ConstraintLayout1</string>
+    <string name="errmessage">This feild is required.</string>
+    <string name="errmessage1">This email is not registered with us.</string>
+</resources>
