@@ -1,0 +1,59 @@
+{
+
+    "lists":[
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5  64GB 4 Slots/HARD DRIVE 1 X 1TB SATA 3.5 7.2k SATA / STD. HDD BAY/ 3 bay MAX. HDD BAY upto  bay/ OPTICAL Multi Burner/Integrate",
+            "type":"READ MORE",
+            "no":1,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5",
+            "type":"READ MORE",
+            "no":10,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5",
+            "type":"READ MORE",
+            "no":1,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5",
+            "type":"READ MORE",
+            "no":1,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"IBM ThinkServer TS150 Tower Server With Max. Processor 1 x Intel Xeon E3 (Quad Core) E3-1225 v5",
+            "type":"READ MORE",
+            "no":1,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        },
+        {
+            "data":"aptec 128 MB Raid Controller Pair. Pci-e SAS/SATA",
+            "type":"READ MORE",
+            "no":1,
+            "date":"10 Jul 2019",
+            "amount":"Rs 45,000",
+            "imagepng":"./Images/circlemenu.png"
+
+        }
+       ]
+}
