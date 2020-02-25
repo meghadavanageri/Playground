@@ -1,0 +1,44 @@
+<html>
+  <style>
+    .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }
+</style>
+
+<body>
+<img src="images/add.png" onclick="popup()" style="height: 30px; width: 30px;margin-left: 110px;">
+
+<div id="myDIV" style= "display: none;width: 10%;">
+  <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;">
+
+          <div style="width:100%">
+              <div>
+                  <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                      <span>EDIT</span></div>
+              </div>
+              
+              <div>
+                  <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                      <span>DELETE</span></div>
+              </div>
+          </div>
+      </div>
+</div>
+<script>
+function popup() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 9</title>
+</head>
+<script>
+    function Click(url) {
+      window.location = url;
+      
+  }
+    function popup() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .textfont {
+        text-align: left;
+        font: Bold 14px/16px Calibri;
+        letter-spacing: 0.9px;
+        color: #505050;
+        opacity: 1;
+    }
+
+    .imagealign {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button1 {
+        background-color: #32BDD2;
+        border: solid;
+        border-color: #32BDD2;
+        border-radius: 15px;
+        color: #F0F0F0;
+        height: 33px;
+        width: 150px;
+    }
+
+    .inputspace {
+        width: 100%;
+        border: 2px solid #D3D3D3;
+        border-radius: 15px;
+        height: 30px;
+    }
+
+    .dot {
+        margin-top: 4px;
+        height: 12px;
+        width: 12px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    p {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+</style>
+
+<body>
+    <div style="width:100%">
+        <div>
+            <div>
+                <div style="width:100%">
+                    <div>
+                        <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+            box-shadow: 0px 0px 4px #00000029;
+            opacity: 1;">
+                            <div style="width:100%;">
+                                <div>
+                                    <div style="width: 80%;float: left;">
+                                        <img src="../../IMAGES/request-icons-02.png" width="30" height="30">
+                                    </div>
+                                    <div style="width: 5%;float: left;">
+                                        <img class="imagealign" src="../../IMAGES/profilepic.jpg" width="30"
+                                            height="30">
+                                    </div>
+                                    <div class="textfont"
+                                        style="width: 10%;text-align: center;font-size:medium;float: left;">
+                                        John Doe
+                                    </div>
+                                    <div style="width:5%;float: left;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-05.png" width="20"
+                                            height="20">
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%">
+                    <div>
+                        <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: solid 15px #00000029;box-shadow: 0px 0px 6px #00000034;padding-top: 2%;padding-bottom: 2%;">
+                            <div style="width:100%">
+                                <div style="padding: 1%;">
+                                    <div style="float: left;width: 30%;">
+                                        <span class="textfont" style="border-bottom: solid 5px #32BDD2;font-size: larger;
+                    position: relative;left: 10%;">My
+                                            Requests</span>
+                                    </div>
+                                    <div style="float: left;width: 40%;">
+                                        </span><input class="inputspace" type="text" name="search"
+                                            placeholder="Search"></span>
+                                    </div>
+                                    <div style="float: left;width: 30%;"
+                                    onclick="Click('Megha_Div_Note.html')">
+                                        <span style="position: relative;left: 40%;"> <input type="button"
+                                                class="button1" value="NEW REQUESTS"></span>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </div>
+                            <div style="width:100%">
+                                <div style="border-bottom: 1px solid #F6F8F9;">
+                                    <div style="width: 5%;float: left;"  onclick="popup()">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-01.png" width="40"
+                                            height="40">
+                                    </div>
+                                    <div id="myDIV" style= "display: none;width: 10%;">
+                                        <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+                                        box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;">
+                                      
+                                                <div style="width:100%">
+                                                    <div>
+                                                        <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                                                            <span>EDIT</span></div>
+                                                    </div>
+                                                    
+                                                    <div>
+                                                        <div class="textfont" style="font-size: large;padding-bottom: 10%;">
+                                                            <span>DELETE</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                      </div>
+                                    <div style="width: 95%;float: left;vertical-align: middle;">
+                                        <p class="textfont">FILTER<br>
+                                            You have not applied any filter</p>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </div>
+                            <div style="width:100%">
+                                <div style="border-bottom: 1px solid #F6F8F9;">
+                                    <div class="textfont" style="padding-left: 5%;
+                                         padding-bottom: 3%;padding-top: 3%;float: left;width: 30%;">
+                                        <span>PUR - 2019 - 056</span><br>
+                                        <span style="font-size: small;">Submitted on</span><br>
+                                        <span>20 Jun 2019</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 3%;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-14.png" width="50"
+                                            height="50">
+                                    </div>
+                                    <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
+                                        <span class="textfont">AWATING APPROVAL</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
+                                        <span class="dot" style="background:#FFC60A;"></span>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <div style="border-bottom: 1px solid #F6F8F9;">
+                                    <div class="textfont" style="padding-left: 5%;
+                                             padding-bottom: 3%;padding-top: 3%;float: left;width: 30%;">
+                                        <span>PUR - 2019 - 056</span><br>
+                                        <span style="font-size: small;">Submitted on</span><br>
+                                        <span>20 Jun 2019</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 3%;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-14.png" width="50"
+                                            height="50">
+                                    </div>
+                                    <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
+                                        <span class="textfont">APPROVED</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
+                                        <span class="dot" style="background:#24D081;"></span>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <div style="border-bottom: 1px solid #F6F8F9;">
+                                    <div class="textfont" style="padding-left: 5%;
+                                                 padding-bottom: 3%;padding-top: 3%;float: left;width: 30%;">
+                                        <span>PUR - 2019 - 056</span><br>
+                                        <span style="font-size: small;">Submitted on</span><br>
+                                        <span>20 Jun 2019</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 3%;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-14.png" width="50"
+                                            height="50">
+                                    </div>
+                                    <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
+                                        <span class="textfont">DRAFT</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
+                                        <span class="dot" style="background:#D0C824;"></span>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                                <div style="border-bottom: 1px solid #F6F8F9;">
+                                    <div class="textfont" style="padding-left: 5%;
+                                                     padding-bottom: 3%;padding-top: 3%;float: left;width: 30%;">
+                                        <span>PUR - 2019 - 056</span><br>
+                                        <span style="font-size: small;">Submitted on</span><br>
+                                        <span>20 Jun 2019</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 3%;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-14.png" width="50"
+                                            height="50">
+                                    </div>
+                                    <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
+                                        <span class="textfont">REJECTED</span>
+                                    </div>
+                                    <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
+                                        <span class="dot" style="background:#D03E24;"></span>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </div>
+                            <div style="width:100%">
+                                <div>
+                                    <div style="text-align:right;width: 50%;">
+                                        <span class="textfont">SHOW MORE</span>
+                                        <img src="../../IMAGES/request-icons-05.png" width="15" height="15">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
