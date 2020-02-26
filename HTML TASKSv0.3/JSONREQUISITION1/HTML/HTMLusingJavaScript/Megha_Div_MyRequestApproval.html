@@ -2,21 +2,27 @@
 <html>
 
 <head>
-    <title>Page 9</title>
+    <title>Page 7</title>
 </head>
 <script>
     function Click(url) {
       window.location = url;
-      
   }
-    function popup() {
-      var x = document.getElementById("myDIV");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
-    }
+  function popup(l,k) {
+  var container = document.getElementById("l");
+  var popup = document.getElementById("k");
+  if (popup.style.display === "none") {
+    container.style.position = "relative";
+    popup.style.position = "absolute";
+    popup.style.display = "block";
+    popup.style.top = "100%";
+    popup.style.left = "4%";
+    popup.style.zIndex = "1";
+  } else {
+    container.style.position = "initial";
+    popup.style.display = "none";
+  }
+}
     </script>
 <style>
     body {
@@ -129,28 +135,39 @@
                                 </div>
                             </div>
                             <div style="width:100%">
-                                <div style="border-bottom: 1px solid #F6F8F9;">
-                                    <div style="width: 5%;float: left;"  onclick="popup()">
+                                <div style="border-bottom: 1px solid #F6F8F9;" id="l">
+                                    <div style="width: 5%;float: left;"  onclick="popup('l','k')">
                                         <img class="imagealign" src="../../IMAGES/request-icons-01.png" width="40"
                                             height="40">
                                     </div>
-                                    <div id="myDIV" style= "display: none;width: 10%;">
+                                    <div id="k" style="display: none;width:10%;" >
                                         <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
-                                        box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;">
-                                      
-                                                <div style="width:100%">
-                                                    <div>
-                                                        <div class="textfont" style="font-size: large;padding-bottom: 10%;">
-                                                            <span>EDIT</span></div>
-                                                    </div>
-                                                    
-                                                    <div>
-                                                        <div class="textfont" style="font-size: large;padding-bottom: 10%;">
-                                                            <span>DELETE</span></div>
-                                                    </div>
+                                    box-shadow: 0px 0px 40px 0px #00000029;">
+            
+                                            <div style="width:100%; padding-left: 15%;">
+                                                <div>
+                                                    <div class="textfont" style="font-size: small;padding-bottom: 10%;">
+                                                        <span>CLEAR</span></div>
+                                                </div>
+                                                <div>
+                                                    <div class="textfont" style="font-size: small;padding-bottom: 10%;">
+                                                        <span style="color: #B5B5B5;">APPROVED</span></div>
+                                                </div>
+                                                <div>
+                                                    <div class="textfont" style="font-size: small;padding-bottom: 10%;">
+                                                        <span>DRAFT</span></div>
+                                                </div>
+                                                <div>
+                                                    <div class="textfont" style="font-size: small;padding-bottom: 10%;">
+                                                        <span>AWATING</span></div>
+                                                </div>
+                                                <div>
+                                                    <div class="textfont" style="font-size: small;padding-bottom: 10%;">
+                                                        <span>REJECTED</span></div>
                                                 </div>
                                             </div>
-                                      </div>
+                                        </div>
+                                    </div>
                                     <div style="width: 95%;float: left;vertical-align: middle;">
                                         <p class="textfont">FILTER<br>
                                             You have not applied any filter</p>
@@ -171,10 +188,10 @@
                                             height="50">
                                     </div>
                                     <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
-                                        <span class="textfont">AWATING APPROVAL</span>
+                                        <span class="textfont">APPROVED</span>
                                     </div>
                                     <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
-                                        <span class="dot" style="background:#FFC60A;"></span>
+                                        <span class="dot" style="background:#24D081;"></span>
                                     </div>
                                     <div style="clear: both;"></div>
                                 </div>
@@ -209,10 +226,10 @@
                                             height="50">
                                     </div>
                                     <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
-                                        <span class="textfont">DRAFT</span>
+                                        <span class="textfont">APPROVED</span>
                                     </div>
                                     <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
-                                        <span class="dot" style="background:#D0C824;"></span>
+                                        <span class="dot" style="background:#24D081;"></span>
                                     </div>
                                     <div style="clear: both;"></div>
                                 </div>
@@ -228,10 +245,10 @@
                                             height="50">
                                     </div>
                                     <div style="text-align: right;float: left;width: 20%;padding-top: 5%;">
-                                        <span class="textfont">REJECTED</span>
+                                        <span class="textfont">APPROVED</span>
                                     </div>
                                     <div style="float: left;width: 20%;padding-top: 5%;padding-left: 2%;">
-                                        <span class="dot" style="background:#D03E24;"></span>
+                                        <span class="dot" style="background:#24D081;"></span>
                                     </div>
                                     <div style="clear: both;"></div>
                                 </div>

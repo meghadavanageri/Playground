@@ -10,9 +10,9 @@
 </style>
 
 <body>
-<img src="images/add.png" onclick="popup()" style="height: 30px; width: 30px;margin-left: 110px;">
+<img src="../../IMAGES//add.png" onclick="popup()" style="height: 30px; width: 30px;margin-left: 110px;">
 
-<div id="myDIV" style= "display: none;width: 10%;">
+<div id="edit" style= "display: none;width: 10%;">
   <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;">
 
@@ -31,7 +31,7 @@
 </div>
 <script>
 function popup() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("edit");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {
