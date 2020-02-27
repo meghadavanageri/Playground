@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Page 2</title>
 </head>
 <script>
     function clicktwo(){
-        errmessage();
+        if(document.getElementById("dis").style.display === "none" ){
+            errmessage();
+        }
+       else{
         nextpage();
+       }
+        
     }
     function nextpage(){
         window.location.replace("Megha_Div_MyRequest.html");
@@ -126,7 +130,7 @@
                                                         </div>
                                                         <div style="width: 100%;">
                                                                 <div>
-                                                                    <div class="hide" style= "display: none;"> 
+                                                                    <div id="dis" class="hide" style= "display: none;"> 
                                                                             <img
                                                                             src="../../IMAGES/request-icons-07.png"
                                                                             height="15" width="15">
