@@ -1,5 +1,58 @@
+<!DOCTYPE html>
 <html>
-  <style>
+
+<head>
+    <title>Page 4</title>
+</head>
+<script>
+    function clicktwo() {
+        if (document.getElementById("dis").style.display === "none") {
+            errmessage();
+        }
+        else {
+            nextpage();
+        }
+
+    }
+    function nextpage() {
+        var d = document.getElementById("disp1");
+        var c = document.getElementById("disp2");
+        if (d.style.display === "none") {
+            d.style.display = "block";
+            d.style.zIndex = "1";
+            c.style.position = "relative";
+            d.style.position = "absolute";
+        } else {
+            d.style.display = "none";
+        }
+    }
+    function errmessage() {
+        var x = document.getElementById("button");
+        var y = document.getElementsByClassName("hide");
+
+        for (var i = 0; i != y.length; i++) {
+            if (x.click) {
+                y[i].style.display = "block";
+            } else {
+                y[i].style.display = "none";
+            }
+        }
+    }
+    function Click(url) {
+        window.location = url;
+    }
+</script>
+<style>
+    .button1 {
+        background-color: #32BDD2;
+        border: solid;
+        border-color: #32BDD2;
+        border-radius: 15px;
+        color: #F0F0F0;
+        height: 35px;
+        width: 100px;
+    }
+
     .textfont {
         text-align: left;
         font: Bold 14px/16px Calibri;
@@ -7,38 +60,453 @@
         color: #505050;
         opacity: 1;
     }
+    .inputspace {
+        width: 100%;
+        border: 1px solid #D3D3D3;
+        border-radius: 3px;
+        height: 25px;
+
+    }
+    .hide {
+        display: none;
+    }
 </style>
 
 <body>
-<img src="../../IMAGES//add.png" onclick="popup()" style="height: 30px; width: 30px;margin-left: 110px;">
+    <div id="disp1" style="width:100%;display: none;">
+        <div>
+            <div
+                style="background-color: #00000067;;padding-top: 5%;padding-bottom: 5%;padding-left:30%;padding-right: 30%;">
+                <div style="width:100%">
+                    <div>
+                        <div style="background-color: #FFFFFF;
+                            border-radius: 35px;">
+                            <div style="width:100%">
+                                <div>
+                                    <div style="box-shadow: 0px 3px 6px #00000067 ;border-radius:25px 25px 0px 0px">
+                                        <div style="width:100%">
+                                            <div style="padding: 2%;">
+                                                <div style="width: 90%;float: left;">
+                                                    <span class="textfont">Add People</span>
+                                                </div>
+                                                <div style="width: 10%;float: left;">
+                                                    <img class="imagealign" src="../../IMAGES/request-icons-13.png"
+                                                        width="30" height="30">
+                                                </div>
+                                                <div style="clear: both;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width:100%">
+                                <div style="padding: 3%;">
+                                    <div style="padding-left:5%;">
+                                        <div style="width: 100%;">
+                                            <div>
+                                                <div onclick="Click('Megha_Div_AddPeople25.html')">
+                                                    <input class="inputspace" placeholder="Search">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div>
+                                                    <div style="width: 100%;">
+                                                        <div>
+                                                            <div style="width: 90%;margin-top: 2%;">
+                                                                <div>
+                                                                    <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                        <div style="width: 20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/profilepic.jpg"
+                                                                                width="30" height="30">
+                                                                        </div>
+                                                                        <div class="textfont"
+                                                                            style="width: 60%;text-align:left;float: left;">
+                                                                            <p>Luke Ray</br>Lorem ipsum doler
+                                                                                sit amet.</p>
+                                                                        </div>
+                                                                        <div style="width:20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/request-icons-10.png"
+                                                                                width="40" height="40">
+                                                                        </div>
+                                                                        <div style="clear: both;"></div>
 
-<div id="edit" style= "display: none;width: 10%;">
-  <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
-  box-shadow: 0px 0px 40px 0px #00000029;padding: 10%;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width: 90%;">
+                                                                <div>
+                                                                    <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                        <div style="width: 20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/profilepic.jpg"
+                                                                                width="30" height="30">
+                                                                        </div>
+                                                                        <div class="textfont"
+                                                                            style="width: 60%;text-align:left;float: left;">
+                                                                            <p>Daisy Lake</br>Lorem ipsum doler
+                                                                                sit amet.</p>
+                                                                        </div>
+                                                                        <div style="width:20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/request-icons-10.png"
+                                                                                width="40" height="40">
+                                                                        </div>
+                                                                        <div style="clear: both;"></div>
 
-          <div style="width:100%">
-              <div>
-                  <div class="textfont" style="font-size: large;padding-bottom: 10%;">
-                      <span>EDIT</span></div>
-              </div>
-              
-              <div>
-                  <div class="textfont" style="font-size: large;padding-bottom: 10%;">
-                      <span>DELETE</span></div>
-              </div>
-          </div>
-      </div>
-</div>
-<script>
-function popup() {
-  var x = document.getElementById("edit");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-</script>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width: 90%;">
+                                                                <div>
+                                                                    <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                        <div style="width: 20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/profilepic.jpg"
+                                                                                width="30" height="30">
+                                                                        </div>
+                                                                        <div class="textfont"
+                                                                            style="width: 60%;text-align:left;float: left;">
+                                                                            <p>Mark Smith</br>Lorem ipsum doler
+                                                                                sit amet.</p>
+                                                                        </div>
+                                                                        <div style="width:20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/request-icons-10.png"
+                                                                                width="40" height="40">
+                                                                        </div>
+                                                                        <div style="clear: both;"></div>
 
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div style="width: 90%;">
+                                                                <div>
+                                                                    <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                        <div style="width: 20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/profilepic.jpg"
+                                                                                width="30" height="30">
+                                                                        </div>
+                                                                        <div class="textfont"
+                                                                            style="width: 60%;text-align:left;float: left;">
+                                                                            <p>Harry Weasley</br>Lorem ipsum doler
+                                                                                sit amet.</p>
+                                                                        </div>
+                                                                        <div style="width:20%;float: left;">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/request-icons-10.png"
+                                                                                width="40" height="40">
+                                                                        </div>
+                                                                        <div style="clear: both;"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width:100%">
+                                    <div>
+                                        <div style="box-shadow: 0px -3px 6px #00000029;border-radius:0px 0px 37px 37px">
+                                            <div style="width:100%">
+                                                <div style="padding: 2%;">
+                                                    <div style="width: 33%;float: left;">
+                                                        <a href="#" class="textfont"><b>
+                                                                CANCEL</b></a>
+                                                    </div>
+                                                    <div class="button2" style="width:65%;float: left;"
+                                                    onclick="Click('Megha_Div_InvitePeople.html')">
+                                                        You haven't selected any person
+                                                        <div style="float: right;">
+                                                            <input type="button" class="button1" value="DONE">
+                                                        </div>
+                                                       
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="disp2" style="width:100%">
+      <div>
+        <div>
+            <div style="background-color:#F6F8F9;">
+                <div style="width: 100%;">
+                    <div>
+                        <div style="background: #FFFFFF 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 0px 4px #00000029;
+                        opacity: 1;">
+                            <div style="width:100%;background-color: #FFFFFF;">
+                                <div>
+                                    <div style="width: 80%;float: left;">
+                                        <img src="../../IMAGES/request-icons-02.png" width="30" height="30">
+                                    </div>
+                                    <div style="width: 5%;float: left;">
+                                        <img class="imagealign" src="../../IMAGES/profilepic.jpg" width="30"
+                                            height="30">
+                                    </div>
+                                    <div class="textfont"
+                                        style="width: 10%;text-align: center;font-size:medium;float: left;">
+                                        John Doe
+                                    </div>
+                                    <div style="width:5%;float: left;">
+                                        <img class="imagealign" src="../../IMAGES/request-icons-05.png" width="20"
+                                            height="20">
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 100%;">
+                        <div>
+                            <div style="background-color: #FFFFFF;margin: 1%;">
+                                <div style="width: 100%;">
+                                    <div style="width: 20%;float: left;">
+                                        <div>
+                                            <div style="background-color: #FFFFFF;padding-bottom: 60%;">
+                                                <div>
+                                                    <div style="transform:rotate(270deg);">
+                                                        <span class="textfont"
+                                                            style="font-size:14px;"><b>REQUISITION</b></span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-top:60%;padding-left:44%">
+
+                                                        <span style="color: #D3D3D3;" class="circle">1</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:48%">
+                                                        <div class="dot1"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:44%">
+                                                        <span style="color: #D3D3D3;" class="circle">2
+                                                        </span style="color: #D3D3D3;">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:48%">
+                                                        <div class="dot1"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:44%">
+                                                        <span 
+                                                            class="circle">3</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:48%">
+                                                        <div class="dot1"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:44%">
+                                                        <span style="background-color: #32BDD2;color: #FFFFFF;" class="circle">4</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:48%">
+                                                        <div class="dot1"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:44%">
+                                                        <span style="color: #D3D3D3;" class="circle">5</span>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:48%">
+                                                        <div class="dot1"></div>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div style="padding-left:44%">
+                                                        <span style="color: #D3D3D3;" class="circle">6</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="width: 80%;float: left;">
+                                    <div>
+                                        <div>
+                                            <div style="width: 100%;">
+                                                <div>
+                                                    <div style="border: 1px solid #F0F0F0;margin: 2%;">
+                                                        <div style="width: 100%;">
+                                                            <div>
+                                                                <div class="textfont"
+                        style="background-color: #F0F0F0;padding: 1%;">
+                                                                    <div>
+                                                                        <div style="width: 60%;float: left;">
+                                                                            <span>INVITE PEOPLE</span>
+                                                                            <p>Lorem ipsum dolor sit amet, consectetur
+                                                                                adipiscing elit.</p>
+                                                                        </div>
+
+                                                                        <div class="textfont"
+                                                                            style="width: 20%;text-align:right;font-size:medium;float: left;">
+                                                                            <span>ADD PEOPLE</span>
+                                                                        </div>
+                                                                        <div style="width:20%;float: left;"
+                                                                        class="pointer" onclick="Click('Megha_Div_AddPeople19.html')">
+                                                                            <img class="imagealign"
+                                                                                src="../../IMAGES/request-icons-10.png"
+                                                                                width="40" height="40">
+                                                                        </div>
+                                                                        <div style="clear: both;"></div>
+                                                                    </div>
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div style="width: 100%;">
+                                                            <div>
+                                                                <div
+                                                                    style="border:1px solid #DFEBEF;padding: 4%;background-color: #FFFFFF;">
+                                                                    <div style="width: 60%;margin-top: 2%;">
+                                                                        <div>
+                                                                            <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                                <div style="width: 20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/profilepic.jpg"
+                                                                                        width="30" height="30">
+                                                                                </div>
+                                                                                <div class="textfont"
+                                                                                    style="width: 60%;text-align:left;font-size:medium;float: left;">
+                                                                                    <p>Luke Ray</br>Lorem ipsum doler
+                                                                                        sit amet.</p>
+                                                                                </div>
+                                                                                <div style="width:20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/request-icons-24.png"
+                                                                                        width="40" height="40">
+                                                                                </div>
+                                                                                <div style="clear: both;"></div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="width: 60%;margin-top: 2%;">
+                                                                        <div>
+                                                                            <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                                <div style="width: 20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/profilepic.jpg"
+                                                                                        width="30" height="30">
+                                                                                </div>
+                                                                                <div class="textfont"
+                                                                                    style="width: 60%;text-align:left;font-size:medium;float: left;">
+                                                                                    <p>Daisy Lake</br>Lorem ipsum doler
+                                                                                        sit amet.</p>
+                                                                                </div>
+                                                                                <div style="width:20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/request-icons-24.png"
+                                                                                        width="40" height="40">
+                                                                                </div>
+                                                                                <div style="clear: both;"></div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div style="width: 60%;margin-top: 2%;">
+                                                                        <div>
+                                                                            <div style="border:1px solid #D5E2E8;background-color:#F4F8FA;
+                                                                            padding: 2%">
+                                                                                <div style="width: 20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/profilepic.jpg"
+                                                                                        width="30" height="30">
+                                                                                </div>
+                                                                                <div class="textfont"
+                                                                                    style="width: 60%;text-align:left;font-size:medium;float: left;">
+                                                                                    <p>Mark Smith</br>Lorem ipsum doler
+                                                                                        sit amet.</p>
+                                                                                </div>
+                                                                                <div style="width:20%;float: left;">
+                                                                                    <img class="imagealign"
+                                                                                        src="../../IMAGES/request-icons-24.png"
+                                                                                        width="40" height="40">
+                                                                                </div>
+                                                                                <div style="clear: both;"></div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="width: 100%;float: left;">
+                                <div>
+                                    <div style="padding:1%">
+                                        <div>
+                                            <div style="width:80%;position: relative;left: 22%;">
+                                                <div>
+                                                    <div class="textfont" style="width: 70%;float: left;"
+                                                    class="pointer" onclick="Click('Megha_Div_Acknowledgement.html')">
+                                                        <a href="#" style="color: #595959;font-size: larger;">SAVE
+                                                            DRAFT</a>
+                                                    </div>
+                                                    <div class="textfont" style="width: 15%;float: left;"
+                                                    class="pointer" onclick="Click('Megha_Div_Attachments23.html')">
+                                                        <a href="#" style="color: #595959;font-size: larger;">BACK</a>
+                                                    </div>
+
+
+                                                    <div style="width: 15%;float:left;"
+                                                    class="pointer" onclick="Click('Megha_Div_AddApprover.html')">
+                                                        <button class="button1">NEXT</button>
+                                                    </div>
+                                                    <div style="clear: both;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        </div>
 </body>
+
 </html>
