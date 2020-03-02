@@ -57,7 +57,7 @@ xhttp.onreadystatechange = function() {
       btnBox.appendChild(moreBtn);
       moreBtn.innerHTML = "MORE";
       moreBtn.style =
-        "border:0;border-radius:1.95vw;background-color:#FFFFFF;padding:10px 20px;box-shadow: 1px 1px 5px #00000040;font:italic small-caps 700 1.17vw cursive";
+      "border:0;border-radius:1.95vw;background-color:#FFFFFF;padding:10px 20px;box-shadow: 1px 1px 5px #00000040;font:italic small-caps 700 1.17vw cursive";
       moreBtn.style.color = darkcolor;
       moreBtn.style.backgroundColor = moreBtnBackcolor;
       moreBtn.id = "btn" + i;
@@ -70,12 +70,11 @@ xhttp.onreadystatechange = function() {
           moreBtn.innerHTML = "MORE";
         }
       };
-
       var detailslist = document.createElement("div");
       detailsBox.appendChild(detailslist);
       detailslist.id = "list" + i;
       detailslist.style =
-        "padding: 18% 0;box-shadow: 1px 1px 5px #00000040;text-align:center;border-radius: 1.56vw";
+      "padding: 18% 0;box-shadow: 1px 1px 5px #00000040;text-align:center;border-radius: 1.56vw";
       detailslist.style.backgroundColor = darkcolor;
       detailslist.style.visibility = "hidden";
 
@@ -116,7 +115,7 @@ xhttp.onreadystatechange = function() {
       textBox.appendChild(overview);
       overview.innerHTML = "<u>OVERVIEW</u>:</br> " + data[i].overview;
       overview.style =
-        "font:italic small-caps 700 0.97vw cursive;color:#000000;margin-top:3%;";
+      "font:italic small-caps 700 0.97vw cursive;color:#000000;margin-top:3%;";
       overview.style.color = fontcolor;
     }
     var nextrow = document.createElement("div");
@@ -128,10 +127,10 @@ xhttp.onreadystatechange = function() {
     nextrow.appendChild(button);
     button.innerHTML = "UPCOMING MOVIES";
     button.style =
-      "border:0;border-radius:1.95vw;padding:1% 2%;color:#FFFFFF;box-shadow: 1px 1px 5px #00000040;font:italic small-caps 600 1.17vw cursive";
+    "border:0;border-radius:1.95vw;padding:1% 2%;color:#FFFFFF;box-shadow: 1px 1px 5px #00000040;font:italic small-caps 600 1.17vw cursive";
     button.style.backgroundColor = darkcolor;
     button.onclick = function() {
-      window.open("movie2.html", "_self", false);
+    window.open("movie2.html", "_self", false);
     };
   }
 };
